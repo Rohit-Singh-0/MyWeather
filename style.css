@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bg-img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+
+}
+
+.content-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+/* body {
+    background-image: url("https://images.unsplash.com/photo-1419833173245-f59e1b93f9ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter:blur(10px) ;
+
+} */
+
+.content {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    background-image: url("https://images.unsplash.com/photo-1419833173245-f59e1b93f9ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h2 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: fit-content;
+    color: white;
+    font-size: larger;
+}
+
+.left {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    align-content: flex-end;
+    backdrop-filter: blur(10px);
+    border-left: 3px solid transparent;
+}
+
+#input_city {
+    color: aliceblue;
+    border-style: none;
+    background: transparent;
+    height: 50px;
+    font-size: larger;
+    width: 70%;
+    margin: 4% 33px 0 33px;
+    outline: none;
+}
+
+button {
+    width: 15%;
+    height: 13%;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    opacity: 0.5;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s;
+
+}
+
+button:hover {
+    background-color: white;
+    opacity: 1;
+
+}
+
+hr {
+    width: 70%;
+    color: white;
+    margin: 0 33px;
+
+}
+
+h1,
+p {
+    color: white;
+}
+
+#temperature {
+    font-size: 450%;
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+}
+
+#location {
+    position: absolute;
+    bottom: 23%;
+    left: 30%;
+}
+
+#time_date {
+    position: absolute;
+    bottom: 22%;
+    left: 18%;
+
+}
+
+#type {
+    font-size: small;
+    position: absolute;
+    bottom: 21.5%;
+    left: 60.5%;
+
+
+}
+
+#weather_png {
+    position: absolute;
+    width: 9%;
+    height: 10%;
+    bottom: 25%;
+    left: 59%;
+}
+
+table {
+    position: absolute;
+    color: white;
+    bottom: 5%;
+    height: 30%;
+    width: 90%;
+    left: 5%;
+}
+
+td {
+    width: 90%;
+    height: 10%;
+}
+
+.weather_details {
+    font-size: x-large;
+    color: white;
+    position: absolute;
+    bottom: 40%;
+    left: 4%;
+}
