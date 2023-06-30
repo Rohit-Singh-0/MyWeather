@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatgptcss.css">
     <title>Document</title>
 </head>
 
@@ -19,13 +19,22 @@
             alt="" srcset="">
         <div class="left">
             <h2>MyWeather</h2>
-            <h1 id="temperature">0&deg;C</h1>
-            <h1 id="location">Location</h1>
-            <!-- <p id="time_date">time-date month year</p> -->
-            
-                <img id="weather_png" src="assets\clear.png" alt="">
-                <p id="type">type of weather</p>
-            
+            <table class="left-tab">
+                <tr>
+                    <td class="left_data">
+                    <h1 id="temperature">30&deg;C</h1></td>
+                    
+                    <!-- <p id="time_date">time-date month year</p> -->
+                        <td class="left_data img-data">
+                    <img id="weather_png" src="assets\clear.png" alt="">
+                    <p id="type">type of weather</p>
+                </td>
+                </tr>
+                <tr>
+                    <td class="left_data loc">
+                        <h1 id="location">Location</h1></td>
+                </tr>
+            </table>
         </div>
         <div class="right">
             <input type="text" name="" id="input_city" placeholder="Enter City">
@@ -33,31 +42,31 @@
                 style="color: black; font-size: large;"></button>
             <hr>
             <h3 class="weather_details">Weather Details</h3>
-            <table>
+            <table class="right-tab">
                 <tr>
-                    <td>
+                    <td class="right_data">
                         HUMIDITY
                     </td>
-                    <td id="humidity">
+                    <td class="right_data" id="humidity">
                         86%
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="right_data">
                         WIND
                     </td>
-                    <td id="wind">
+                    <td class="right_data" id="wind">
                         10Km/h
                     </td>
                 </tr>
                 <tr>
-                    <td>FEELS LIKE</td>
-                    <td id="feels_like">40%</td>
+                    <td class="right_data">FEELS LIKE</td>
+                    <td class="right_data" id="feels_like">40%</td>
 
                 </tr>
                 <tr>
-                    <td>CLOUDY</td>
-                    <td id="cloudy">56%</td>
+                    <td class="right_data">CLOUDY</td>
+                    <td class="right_data" id="cloudy">56%</td>
                 </tr>
             </table>
         </div>
