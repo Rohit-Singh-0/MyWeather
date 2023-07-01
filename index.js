@@ -32,39 +32,39 @@ async function check_weather(city){
 
     switch (weather_data.weather[0].main) {
         case 'Clouds':
-            weather_img.src = "/assets/cloud.png"
-            bg_img.src = "/assets/cloud-img.jpg"
-            content_bg.src = "/assets/cloud-img.jpg"
+            weather_img.src = "assets/cloud.png"
+            bg_img.src = "assets/cloud-img.jpg"
+            content_bg.src = "assets/cloud-img.jpg"
             break;
         case 'Clear':
-            weather_img.src = "/assets/clear.png"
-            bg_img.src = "/assets/clear-img.jpg"
-            content_bg.src = "/assets/clear-img.jpg"
+            weather_img.src = "assets/clear.png"
+            bg_img.src = "assets/clear-img.jpg"
+            content_bg.src = "assets/clear-img.jpg"
             break;
         case 'Mist':
-            weather_img.src = "/assets/mist.png"
-            bg_img.src = "/assets/mist-img.jpg"
-            content_bg.src = "/assets/mist-img.jpg"
+            weather_img.src = "assets/mist.png"
+            bg_img.src = "assets/mist-img.jpg"
+            content_bg.src = "assets/mist-img.jpg"
             break;
         case 'Haze':
-            weather_img.src = "/assets/mist.png"
-            bg_img.src = "/assets/mist-img.jpg"
-            content_bg.src = "/assets/mist-img.jpg"
+            weather_img.src = "assets/mist.png"
+            bg_img.src = "assets/mist-img.jpg"
+            content_bg.src = "assets/mist-img.jpg"
             break;
         case 'Rain':
-            weather_img.src = "/assets/rain.png"
-            bg_img.src = "/assets/rain-img.jpg"
-            content_bg.src = "/assets/rain-img.jpg"
+            weather_img.src = "assets/rain.png"
+            bg_img.src = "assets/rain-img.jpg"
+            content_bg.src = "assets/rain-img.jpg"
             break;
         case 'Drizzle':
-            weather_img.src = "/assets/rain.png"
-            bg_img.src = "/assets/rain-img.jpg"
-            content_bg.src = "/assets/rain-img.jpg"
+            weather_img.src = "assets/rain.png"
+            bg_img.src = "assets/rain-img.jpg"
+            content_bg.src = "assets/rain-img.jpg"
             break;
         case 'Snow':
-            weather_img.src = "/assets/snow.png"
-            bg_img.src = "/assets/snow-img.jpg"
-            content_bg.src = "/assets/snow-img.jpg"
+            weather_img.src = "assets/snow.png"
+            bg_img.src = "assets/snow-img.jpg"
+            content_bg.src = "assets/snow-img.jpg"
             break;
         
     }
