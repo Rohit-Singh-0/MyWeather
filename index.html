@@ -1,78 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatgptcss.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-    <img class="bg-img"
-        src="https://images.unsplash.com/photo-1419833173245-f59e1b93f9ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-        alt="" srcset="">
+  <body>
+    <img class="bg-img" src="assets\snow-img.jpg" alt="" srcset="" />
     <div class="content">
-        <img class="content-bg"
-            src="https://images.unsplash.com/photo-1419833173245-f59e1b93f9ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-            alt="" srcset="">
-        <div class="left">
-            <h2>MyWeather</h2>
-            <table class="left-tab">
-                <tr>
-                    <td class="left_data">
-                    <h1 id="temperature">30&deg;C</h1></td>
-                    
-                    <!-- <p id="time_date">time-date month year</p> -->
-                        <td class="left_data img-data">
-                    <img id="weather_png" src="assets\clear.png" alt="">
-                    <p id="type">type of weather</p>
-                </td>
-                </tr>
-                <tr>
-                    <td class="left_data loc">
-                        <h1 id="location">Location</h1></td>
-                </tr>
-            </table>
-        </div>
-        <div class="right">
-            <input type="text" name="" id="input_city" placeholder="Enter City">
-            <button id="search_button" class="fa-solid fa-magnifying-glass"
-                style="color: black; font-size: large;"></button>
-            <hr>
-            <h3 class="weather_details">Weather Details</h3>
-            <table class="right-tab">
-                <tr>
-                    <td class="right_data">
-                        HUMIDITY
-                    </td>
-                    <td class="right_data" id="humidity">
-                        86%
-                    </td>
-                </tr>
-                <tr>
-                    <td class="right_data">
-                        WIND
-                    </td>
-                    <td class="right_data" id="wind">
-                        10Km/h
-                    </td>
-                </tr>
-                <tr>
-                    <td class="right_data">FEELS LIKE</td>
-                    <td class="right_data" id="feels_like">40%</td>
+      <img class="content-bg" src="assets\snow-img.jpg" alt="" srcset="" />
+      <div class="left">
+        <h2>MyWeather</h2>
+        <table class="left-tab">
+          <tr>
+            <td class="left_data">
+              <h1 id="temperature">30&deg;C</h1>
+            </td>
 
-                </tr>
-                <tr>
-                    <td class="right_data">CLOUDY</td>
-                    <td class="right_data" id="cloudy">56%</td>
-                </tr>
-            </table>
-        </div>
+            <!-- <p id="time_date">time-date month year</p> -->
+            <td class="left_data img-data">
+              <img id="weather_png" src="assets\clear.png" alt="" />
+              <p id="type">type of weather</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="left_data loc">
+              <h1 id="location">Location</h1>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="right">
+        <input type="text" name="" id="input_city" placeholder="Enter City" />
+        <button
+          id="search_button"
+          class="fa-solid fa-magnifying-glass"
+          style="color: black; font-size: large"
+        ></button>
+        <hr />
+        <h3 class="weather_details">Weather Details</h3>
+        <table class="right-tab">
+          <tr>
+            <td class="right_data">HUMIDITY</td>
+            <td class="right_data" id="humidity">86%</td>
+          </tr>
+          <tr>
+            <td class="right_data">WIND</td>
+            <td class="right_data" id="wind">10Km/h</td>
+          </tr>
+          <tr>
+            <td class="right_data">FEELS LIKE</td>
+            <td class="right_data" id="feels_like">40%</td>
+          </tr>
+          <tr>
+            <td class="right_data">CLOUDY</td>
+            <td class="right_data" id="cloudy">56%</td>
+          </tr>
+        </table>
+      </div>
     </div>
-    <script src="https://kit.fontawesome.com/51b047b50c.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/51b047b50c.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
