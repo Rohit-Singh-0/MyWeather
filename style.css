@@ -19,6 +19,7 @@
     background-position: center;
     background-size: cover;
     width: 100%;
+    aspect-ratio: auto;
 }
 
 /* body {
@@ -138,6 +139,7 @@ h1, p {
     /* position: absolute; */
     width: 45%;
     height: 10%;
+    aspect-ratio: auto;
     /* bottom: 25%;
     left: 59%; */
 }
@@ -178,3 +180,4 @@ h1, p {
 .loc{
     width: 5%;
 }
+
