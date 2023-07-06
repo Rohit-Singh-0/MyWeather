@@ -81,11 +81,14 @@ async function check_weather(city){
 }
 
 
+function inpu_clear(){
+    input_city.value="";
+}
 
 input_city.addEventListener("change", ()=>{
     check_weather(input_city.value)
+    inpu_clear()
 });
-  
 
 search_btn.addEventListener('click', ()=>{
     check_weather(input_city.value)
