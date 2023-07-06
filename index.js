@@ -12,8 +12,17 @@ const bg_img = document.querySelector(".bg-img")
 const content_bg = document.querySelector(".content-bg")
 
 
-
-
+fetch('https://ipapi.co/json/')
+.then(function(response) {
+  response.json().then(jsonData => {
+    console.log(jsonData);
+    let city=jsonData['city'];
+    check_weather(city)
+  });
+})
+.catch(function(error) {
+  console.log(error)
+});
 
 
 async function check_weather(city){
@@ -42,29 +51,29 @@ async function check_weather(city){
             content_bg.src = "assets/clear-img.jpg"
             break;
         case 'Mist':
-            weather_img.src = "assets/mist.png"
-            bg_img.src = "assets/mist-img.jpg"
-            content_bg.src = "assets/mist-img.jpg"
+            weather_img.src = "/assets/mist.png"
+            bg_img.src = "/assets/mist-img.jpg"
+            content_bg.src = "/assets/mist-img.jpg"
             break;
         case 'Haze':
-            weather_img.src = "assets/mist.png"
-            bg_img.src = "assets/mist-img.jpg"
-            content_bg.src = "assets/mist-img.jpg"
+            weather_img.src = "/assets/mist.png"
+            bg_img.src = "/assets/mist-img.jpg"
+            content_bg.src = "/assets/mist-img.jpg"
             break;
         case 'Rain':
-            weather_img.src = "assets/rain.png"
-            bg_img.src = "assets/rain-img.jpg"
-            content_bg.src = "assets/rain-img.jpg"
+            weather_img.src = "/assets/rain.png"
+            bg_img.src = "/assets/rain-img.jpg"
+            content_bg.src = "/assets/rain-img.jpg"
             break;
         case 'Drizzle':
-            weather_img.src = "assets/rain.png"
-            bg_img.src = "assets/rain-img.jpg"
-            content_bg.src = "assets/rain-img.jpg"
+            weather_img.src = "/assets/rain.png"
+            bg_img.src = "/assets/rain-img.jpg"
+            content_bg.src = "/assets/rain-img.jpg"
             break;
         case 'Snow':
-            weather_img.src = "assets/snow.png"
-            bg_img.src = "assets/snow-img.jpg"
-            content_bg.src = "assets/snow-img.jpg"
+            weather_img.src = "/assets/snow.png"
+            bg_img.src = "/assets/snow-img.jpg"
+            content_bg.src = "/assets/snow-img.jpg"
             break;
         
     }
@@ -73,6 +82,10 @@ async function check_weather(city){
 
 
 
+
+  
+
 search_btn.addEventListener('click', ()=>{
     check_weather(input_city.value)
 });
+
