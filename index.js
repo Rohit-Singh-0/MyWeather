@@ -82,7 +82,9 @@ async function check_weather(city){
 
 
 
-
+input_city.addEventListener("change", ()=>{
+    check_weather(input_city.value)
+});
   
 
 search_btn.addEventListener('click', ()=>{
