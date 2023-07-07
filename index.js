@@ -58,24 +58,24 @@ async function check_weather(city) {
       content_bg.src = "assets/clear-img.jpg";
       break;
     case "Mist":
-      bg_img.src = "/assets/mist-img.jpg";
-      content_bg.src = "/assets/mist-img.jpg";
+      bg_img.src = "assets/mist-img.jpg";
+      content_bg.src = "assets/mist-img.jpg";
       break;
     case "Haze":
-      bg_img.src = "/assets/mist-img.jpg";
-      content_bg.src = "/assets/mist-img.jpg";
+      bg_img.src = "assets/mist-img.jpg";
+      content_bg.src = "assets/mist-img.jpg";
       break;
     case "Rain":
-      bg_img.src = "/assets/rain-img.jpg";
-      content_bg.src = "/assets/rain-img.jpg";
+      bg_img.src = "assets/rain-img.jpg";
+      content_bg.src = "assets/rain-img.jpg";
       break;
     case "Drizzle":
-      bg_img.src = "/assets/rain-img.jpg";
-      content_bg.src = "/assets/rain-img.jpg";
+      bg_img.src = "assets/rain-img.jpg";
+      content_bg.src = "assets/rain-img.jpg";
       break;
     case "Snow":
-      bg_img.src = "/assets/snow-img.jpg";
-      content_bg.src = "/assets/snow-img.jpg";
+      bg_img.src = "assets/snow-img.jpg";
+      content_bg.src = "assets/snow-img.jpg";
       break;
   }
 }
