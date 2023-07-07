@@ -19,7 +19,7 @@
     background-position: center;
     background-size: cover;
     width: 100%;
-
+    
 }
 
 /* body {
@@ -139,7 +139,7 @@ h1, p {
     /* position: absolute; */
     width: 45%;
     height: 10%;
- 
+   
     /* bottom: 25%;
     left: 59%; */
 }
@@ -181,3 +181,14 @@ h1, p {
     width: 5%;
 }
 
+@media (max-width:400px){
+    .content{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}
