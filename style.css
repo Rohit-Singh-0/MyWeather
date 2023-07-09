@@ -171,6 +171,7 @@ h1, p {
     bottom: 21%;
     left: 10%;
     width: 45%;
+    
 
 }
 
@@ -179,6 +180,15 @@ h1, p {
 }
 .loc{
     width: 5%;
+}
+
+.bg-tab{
+    height: 40%;
+top: 50%;
+position: absolute;
+width: 100%;
+background: #77b0a4cd;
+
 }
 
 @media (max-width:400px){
